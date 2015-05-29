@@ -6,7 +6,7 @@
 set -e
 
 # change to working directory
-root="/opt/netflix-proxy"
+root="/opt/iplayer-proxy"
 pushd $root
 
 # obtain the interface with the default gateway say
