@@ -1,5 +1,5 @@
 # iplayer-proxy
-`Docker` packaged smart DNS proxy to watch `BBC iPlayer` outside of the UK using BIND and sniproxy[n1].
+`Docker` packaged smart DNS proxy to watch `BBC iPlayer` outside of the UK using `BIND` and `sniproxy`[n1].
 
 # Instructions
 The following is based on a standard Ubuntu Docker application image provided by `DigitalOcean`, but should in theory work on any Linux distribution with Docker pre-installed.
