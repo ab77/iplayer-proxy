@@ -44,8 +44,8 @@ sudo $(which sed) -i "s/127.0.0.1/${extip}/g" data/db.override
 sudo $(which sed) -i "s/YYYYMMDD/${date}/g" data/db.override
 
 echo "Starting Docker containers"
-sudo $(which docker) run --name bind -d -v /opt/netflix-proxy/data:/data -p 53:53/udp -t ab77/bind
-sudo $(which docker) run --name sniproxy -d -v /opt/netflix-proxy/data:/data --net=host -t ab77/sniproxy
+sudo $(which docker) run --name bind -d -v /opt/iplayer-proxy/data:/data -p 53:53/udp -t ab77/bind
+sudo $(which docker) run --name sniproxy -d -v /opt/iplayer-proxy/data:/data --net=host -t ab77/sniproxy
 
 echo "Testing DNS"
 $(which dig) bbc.co.uk @$ipaddr
